@@ -10,3 +10,5 @@ SCHEME
                            (string-set! texto j temp))
                          (aux (add1 i) (sub1 j)))))))
    (aux 0 (sub1 (string-length texto))))))
+
+fnvjmkf
