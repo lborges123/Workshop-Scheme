@@ -1,3 +1,4 @@
+SCHEME
 (define cadeia-ao-contrario!
  (lambda (texto)
    (letrec ((aux 
