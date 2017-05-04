@@ -1,1 +1,11 @@
-buykhnjm
+(define cadeia-ao-contrario!
+ (lambda (texto)
+   (letrec ((aux 
+             (lambda (i j)
+               (if (< i j)
+                       (begin
+                         (let ((temp (string-ref texto i)))
+                           (string-set! texto i (string-ref texto j))
+                           (string-set! texto j temp))
+                         (aux (add1 i) (sub1 j)))))))
+   (aux 0 (sub1 (string-length texto))))))
